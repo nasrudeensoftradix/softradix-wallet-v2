@@ -1,0 +1,174 @@
+body {
+  background-color: #f4f4f4f7;
+}
+.card {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 700px;
+
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 30px;
+  height: auto;
+}
+
+h1 {
+  color: #000000;
+}
+.btn_,
+.btn_2 {
+  border: none;
+  background: #111111;
+  transition: 0.8s ease;
+  font-weight: 500;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.btn_2 {
+  background: #ececec;
+  color: #111111;
+  margin-left: 20px;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  margin: 10px auto;
+  transform: translateY(-50px);
+  visibility: hidden;
+  opacity: 0;
+}
+#customers.wallet {
+  visibility: visible;
+  transition: 0.5s ease;
+  opacity: 1;
+  top: 20px;
+
+  transform: translateY(0);
+}
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 100px;
+  padding: 10px 20px;
+  /* margin-bottom: 20px; */
+}
+
+p.p1 b {
+  color: #29a20f;
+}
+p.p2 b {
+  color: #b39d21;
+}
+p.p3 b {
+  color: #d02e9e;
+}
+
+#customers2 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 95%;
+  margin: auto;
+}
+
+#customers2 td,
+#customers2 th {
+  border: none;
+  padding: 8px;
+}
+
+#customers2 tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#customers2 tr:hover {
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+#customers2 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #000000;
+  color: white;
+}
+td small {
+  opacity: 70%;
+}
+
+.name_img {
+  display: flex;
+}
+.name_img span img {
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+  object-fit: contain;
+}
+
+.widget_divs {
+  width: 100%;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-100px);
+  height: 100vh;
+  transition: 0.5s all;
+  backdrop-filter: blur(3px);
+}
+.widget_divs.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 0.5s all;
+}
