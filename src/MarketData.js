@@ -106,7 +106,9 @@ export default function MarketData() {
                 </span>
                 <span>
                   {item?.node?.name} <br />
-                  <span style={{ fontSize: "14px" }}>{item?.node?.symbol}</span>
+                  <span style={{ fontSize: "10px", fontWeight: 500 }}>
+                    {item?.node?.symbol}
+                  </span>
                 </span>
               </td>
               <td style={{ color: item?.color }}>

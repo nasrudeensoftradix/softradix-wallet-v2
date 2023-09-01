@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ethers } from "ethers";
+import { initializeTransak } from "./BuySell";
 
 export default function GenerateWallet() {
   const [wallet, setwallet] = useState({
@@ -93,6 +94,7 @@ export default function GenerateWallet() {
             {wallet?.mnemonic}
           </p>
         </div>{" "}
+        {/* <button onClick={initializeTransak}>Buy Crypto</button> */}
       </div>
     </>
   );
